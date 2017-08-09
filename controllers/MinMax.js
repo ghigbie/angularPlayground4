@@ -1,13 +1,13 @@
 /*global angular */
 
 (function(){
-    
-    var MinMax = function($scope){
+    var MinMaxCtrl = function($scope){
         $scope.formModel = {};
     };
     
-    MinMax.$inject = ['$scope'];
+    MinMaxCtrl.$inject = ['$scope'];
     
     angular.module('minmax')
-        .controller('MinMax', MinMax);
+        .controller('MinMaxCtrl', MinMaxCtrl);
+
 }());
