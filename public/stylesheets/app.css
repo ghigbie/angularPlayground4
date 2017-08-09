@@ -41,3 +41,10 @@ body{
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important;
 }
+
+
+#upperSpace {
+    margin-top: 15%;
+}
+
+
