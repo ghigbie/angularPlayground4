@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="minmax">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
@@ -16,7 +16,7 @@
         </nav>
 
 
-        <div class="container main-content" id="upperSpace">
+        <div class="container main-content" id="upperSpace" ng-controller="MinMax">
             <form>
                 <div class="form-group">
                     <lable for="name"><strong>Name</strong></lable>
@@ -38,10 +38,7 @@
         
         <script src="./node_modules/angular/angular.min.js"></script>
         <script src="./node_modules/angular-route/angular-route.min.js"></script>
-        <script src="./modules/meanApp.js"></script>
-        <script src="./controllers/MeanController.js"></script>
-        <script src="./controllers/MeanController1.js"></script>
-        <script src="./controllers/MeanController2.js"></script>
-        <script src="./controllers/MeanController3.js"></script>
+        <script src="./modules/minmax.js"></script>
+        <script src="./controllers/MinMax.js"></script>
     </body>
 </html>
