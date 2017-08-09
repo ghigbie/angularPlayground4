@@ -1,8 +1,8 @@
 /*global angular */
 
 (function(){
-    var MinMax = function(){
-        var vm = this;
+    var MinMax = function($scope){
+        $scope.formModel = {};
     };
     
     MinMax.$inject = ['$scope'];
