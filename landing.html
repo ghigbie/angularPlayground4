@@ -18,34 +18,34 @@
 		<form ng-submit="onSubmit()">
 			 <div class="form-group">
                     <label for="name">Name</label>
-                    <input class="form-control" type="text" id="name" name="name" required="required" ng-model="formModel.name"/>
+                    <input class="form-control" type="text" id="name" name="name" ng-model="formModel.name"/>
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input class="form-control" type="email" id="email" name="email" required="required" ng-Model="formModel.email"/>
+                    <input class="form-control" type="email" id="email" name="email"  ng-Model="formModel.email"/>
                 </div>
                 <div class="form-group">
                     <label for="username">Username</label>
-                    <input class="form-control" type="text" id="username" name="username" required="required"  ng-Model="formModel.username"/>
+                    <input class="form-control" type="password" id="username" name="username"  ng-Model="formModel.username"/>
                 </div>
-                <!--<div class="form-group">-->
-                <!--    <label for="age">Age</label>-->
-                <!--    <input class="form-control" type="number" id="age" name="age" required="required"  ng-Model="formModel.age"/>-->
-                <!--</div>-->
-                <!-- <div class="form-group">-->
-                <!--    <label for="sex">Sex</label>-->
-                <!--    <select class="form-control" type="" id="sex" name="sex" required="required"  ng-Model="formModel.sex">-->
-                <!--        <option value="">Please Choose</option>-->
-                <!--        <option value="male">Male</option>-->
-                <!--        <option value="female">Female</option>-->
-                <!--    </select>-->
-                <!--</div>-->
-                <!--<div class="form-group">-->
-                <!--    <label for="password">Password</label>-->
-                <!--    <input class="form-control" type="password" id="password" name="password" required="required" ng-model="formModel.password"/>-->
-                <!--</div>-->
                 <div class="form-group">
-                    <button class="btn btn-primary" type="submit">Register</button>
+                    <label for="age">Age</label>
+                    <input class="form-control" type="number" id="age" name="age" required="required" ng-model="formModel.age">
+                </div>
+                <div class="form-group">
+                    <label for="sex">Sex</label>
+                    <select class="form-control" type="" id="sex" name="sex" required="required" ng-model="formModel.sex">
+                        <option value="">Please choose</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input class="form-control" type="password" id="password" name="password" required="required" ng-model="formModel.password"/>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary" type="submit" ng-click="onSubmit()">Register</button>
                 </div>
 		</form>
 		<pre> {{ formModel | json }}</pre>
