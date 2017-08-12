@@ -1,6 +1,8 @@
 /*global angular*/
 
 (function(){
-    var minmax = angular.module('minmax', ['ngRoute']);
+    var minmax = angular.module('minmax', [
+        'jcs-autoValidate',
+        'ngRoute']);
     
 }());    

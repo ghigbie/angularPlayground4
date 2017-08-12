@@ -18,15 +18,15 @@
 		<form ng-submit="onSubmit()" nonvalidate="nonvalidate" name="theForm">
 			 <div class="form-group">
                     <label for="name">Name</label>
-                    <input class="form-control" type="text" id="name" name="name" ng-model="formModel.name"/>
+                    <input class="form-control" type="text" id="name" name="name" required="required" ng-model="formModel.name"/>
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input class="form-control" type="email" id="email" name="email"  ng-Model="formModel.email"/>
+                    <input class="form-control" type="email" id="email" name="email" required="required" ng-Model="formModel.email"/>
                 </div>
                 <div class="form-group">
                     <label for="username">Username</label>
-                    <input class="form-control" type="password" id="username" name="username"  ng-Model="formModel.username"/>
+                    <input class="form-control" type="password" id="username" name="username"  required="required" ng-Model="formModel.username"/>
                 </div>
                 <div class="form-group">
                     <label for="age">Age</label>
@@ -55,7 +55,7 @@
         
         <script src="./node_modules/angular/angular.min.js"></script>
         <script src="./node_modules/angular-route/angular-route.min.js"></script>
-        <script src="./node_modules/angular-auto-validate/jcs-auto-validate.js"></script>
+        <script src="bower_components/angular-auto-validate/dist/jcs-auto-validate.min.js"></script>
         <!--<script src="./main.js"></script>-->
         <script src="./modules/minmax.js"></script>
         <script src="./controllers/MinMax.js"></script>
