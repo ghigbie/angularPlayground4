@@ -3,6 +3,7 @@
 (function(){
     var minmax = angular.module('minmax', [
         'jcs-autoValidate',
+        'angular-ladda',
         'ngRoute']);
         
     minmax.run(function(defaultErrorMessageResolver){
