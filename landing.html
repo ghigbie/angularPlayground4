@@ -81,7 +81,13 @@
                         ng-minlength="10"/>
                 </div>
                 <div class="form-group">
-                    <button class="btn btn-primary" type="submit">Register</button>
+                    <button class="btn btn-primary" 
+                        type="submit"
+                        ladda="submitting"
+                        data-state="expand-right">
+                        <span ng-show="submitting">Registering</span> <!--If submitting is true, then show "Registering" -->
+                        <span ng-show="!submitting">Register</span>  <!-- If submitting is false, then show "Register" -->
+                    </button>
                 </div>
 		</form>
 		<pre>{{ theForm | json }}</pre>
